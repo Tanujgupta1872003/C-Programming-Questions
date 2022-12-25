@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int a,b,c;
+    printf("Enter 1st Angle: ");
+    scanf("%d",&a);
+    printf("Enter 2nd Angle: ");
+    scanf("%d",&b);
+    printf("Enter 3rd Angle: ");
+    scanf("%d",&c);
+
+    if(a+b+c==180){
+        printf("Its a Valid triangle");
+    }
+    else{
+        printf("Its not a Valid triangle");
+        }
+getch();
+}
