@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    int num,a,b,c,d,e,reverse=0;
+    printf("Enter a 5 digit number:");
+    scanf("%d",&num);
+    
+    e=num%10;
+    reverse=reverse+e*10000;
+
+    d=(num/10)%10;
+    reverse=reverse+d*1000;
+    
+    c=(num/100)%10;
+    reverse=reverse+c*100;
+    
+    b=(num/1000)%10;
+    reverse=reverse+b*10;
+    
+    a=(num/10000);
+    
+    reverse=reverse+a*1;
+    printf("The reversed number is:%d",reverse);
+    
+    if(num==reverse){
+        printf("\nThey are same.");
+    }
+    else{
+        printf("\nThey are different.");
+    }
+    return 0;
+}
