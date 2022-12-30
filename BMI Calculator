@@ -1,0 +1,15 @@
+// Write a program to determine person is overweight or not.
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+void main()
+{
+    float angle,result;
+
+    printf("Enter Value of Angle: ");
+    scanf("%f",&angle);
+
+    result = (sin(angle)*sin(angle) + cos(angle)*cos(angle));
+    printf("Result is: %f", result);
+getch();
+}
