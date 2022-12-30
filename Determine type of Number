@@ -1,0 +1,24 @@
+// Write a program to enter numbers till the user wants. At the end it should display the count of positive, negative and zeros entered.
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int num;
+    printf("Enter the Number: ");
+    scanf("%d",&num);
+
+    if (num>0){
+        printf("Positive Number");
+    }
+    
+    else if (num<0){
+        printf("Negative Number");
+    }
+    else if (num=0){
+        printf("Zero Number");
+    }
+    else{
+        printf("Invalid Input");
+    }
+getch();
+}
